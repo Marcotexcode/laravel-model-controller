@@ -14,12 +14,12 @@
 
             <div class="container-box">
 
-                @foreach($formati as $formato)
+                @foreach($formati as $key =>$formato)
 
                     <div class="box">
 
 
-                    <img class="image-comics" src="{{ $formato['thumb']}}" alt="{{$formato['series']}}">
+                    <a href="{{route('detailspage', ['id' => $key])}}"><img class="image-comics" src="{{ $formato['thumb']}}" alt="{{$formato['series']}}"></a>
 
                     <p>{{$formato['series']}}</p>
 
@@ -32,7 +32,7 @@
 
             <button class="btn btn-comics" href="">load more</button>
 
-            <!-- @dump($formato) -->
+            @dump($formato) 
         </div>
 
 

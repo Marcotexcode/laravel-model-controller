@@ -29,6 +29,11 @@ Route::get('/characters', 'ComicStaticController@characterspage')->name('charact
 Route::get('/comics', 'ComicDinamicController@comicspage')->name('comicspage');
 
 
+//DETTAGLI
+
+Route::get('/details/{id}', 'ComicDinamicController@detailspage')->name('detailspage');
+
+
 //MOVIE
 
 Route::get('/movie', 'ComicStaticController@moviepage')->name('moviepage');
