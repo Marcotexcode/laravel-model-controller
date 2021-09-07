@@ -3,36 +3,53 @@
 .container-comics {
     background-color: $black-gray;
     padding: 20px;
-}
 
-.box-button-container {
-    width: 80%;
-    margin: 0 auto;
+    .box-button-container {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
 
-}
+        .container-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px; 
 
-.container-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+            .box {
+                width: 150px;
+                height: 150px;
+                margin: 10px; 
+                color: white;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
 
-.box {
-    width: 150px;
-    height: 150px;
-    margin: 10px; 
-    color: white;
-    text-transform: uppercase;
-    font-size: 13px;
-}
+            .image-comics { 
+                width: 100%;
+                height: 120px;
+                margin-bottom: 5px;
+            }
 
-.image-comics { 
-    width: 100%;
-    height: 120px;
-    margin-bottom: 5px;
-}
+        }
 
-.btn-comics {
-    margin: 30px auto;
+        .btn-comics-top {
+            position: absolute;
+            top: -55px;
+        }
+
+        .btn-comics {
+            margin: 30px auto;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            display: flex;
+            padding: 10px;
+            border: none;
+            background-color: $heavenly;
+            color: white;
+        }
+
+    }
     
 }

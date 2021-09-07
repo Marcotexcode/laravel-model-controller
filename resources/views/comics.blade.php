@@ -12,6 +12,8 @@
 
         <div class="box-button-container">
 
+            <button class="btn btn-comics-top">current series</button>
+
             <div class="container-box">
 
                 @foreach($formati  as $formato)
@@ -35,6 +37,7 @@
     </div>
 
     @include('partials.info')
+
 
 @endsection
 
