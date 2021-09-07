@@ -13,7 +13,10 @@ class ComicDinamicController extends Controller
     public function comicspage() 
     {
 
-        $formati = Comic::all();
+
+        //Prova Query:  $formati = Comic::where('id', '=', 4)->get();
+
+        $formati = Comic::all();  
         
         // $comics = config('comics');
     
@@ -27,11 +30,13 @@ class ComicDinamicController extends Controller
 
     PUBLIC function detailspage($id) {
 
-        $comics = config('comics');
+        $formati = Comic::where('id', $id)->first();
 
-        $data = ['formati' => $comics[$id]];
+        // $comics = config('comics');
 
-        return view('details', $data);
+        // $data = ['formati' => $comics[$id]];
+
+        return view('details', compact('formati'));
 
     }
 

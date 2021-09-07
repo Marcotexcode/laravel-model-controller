@@ -14,17 +14,16 @@
 
             <div class="container-box">
 
-                @foreach($formati as $key =>$formato)
+                @foreach($formati  as $formato)
 
                     <div class="box">
 
+                        <a href="{{route('detailspage', ['id' => $formato -> id])}}"><img class="image-comics" src="{{ $formato['thumb']}}" alt="{{$formato['series']}}"></a>
 
-                    <a href="{{route('detailspage', ['id' => $key])}}"><img class="image-comics" src="{{ $formato['thumb']}}" alt="{{$formato['series']}}"></a>
-
-                    <p>{{$formato['series']}}</p>
-
+                        <p>{{$formato['series']}}</p>
 
                     </div>
+                    
                 @endforeach
 
             </div>
