@@ -1,0 +1,26 @@
+
+.jumbotron {
+    height: 400px;
+    background-image: url('../images/jumbotron.jpg');
+    background-size: cover ;
+    position: relative;
+}
+
+.container-button {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    text-transform: uppercase;
+    display: flex;
+    padding: 10px;
+    border: none;
+    background-color: $heavenly;
+    color: white;
+}
+
+.btn-jumbo {
+    position: absolute;
+    bottom: -20px;
+}

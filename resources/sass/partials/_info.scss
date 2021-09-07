@@ -1,0 +1,32 @@
+
+
+.info {
+    background-color: $heavenly;
+   
+}
+
+.container-box-info {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-info {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.image-info {
+    width: 40px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.title-info {
+    text-transform: uppercase;
+    color: white;
+
+}
