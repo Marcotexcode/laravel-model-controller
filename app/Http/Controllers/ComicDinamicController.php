@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class ComicDinamicController extends Controller
 {
@@ -12,11 +13,13 @@ class ComicDinamicController extends Controller
     public function comicspage() 
     {
 
-        $comics = config('comics');
+        $formati = Comic::all();
+        
+        // $comics = config('comics');
     
-        $data = ['formati' => $comics];
+        // $data = ['formati' => $comics];
     
-        return view('comics', $data);
+        return view('comics', compact('formati'));
     
     }
 

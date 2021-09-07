@@ -6,6 +6,8 @@
 
 @section('content')
 
+@include('partials.jumbotron')
+
     <hr>
 
     <img src="{{ $formati['thumb']}}" alt="{{$formati['series']}}">

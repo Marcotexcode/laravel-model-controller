@@ -32,7 +32,6 @@
 
             <button class="btn btn-comics" href="">load more</button>
 
-            @dump($formato) 
         </div>
 
 
