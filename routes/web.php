@@ -16,82 +16,54 @@ use Illuminate\Support\Facades\Route;
 
 //HOME
 
-Route::get('/', function () {
-    return view('home');
-})->name('homepage');
+Route::get('/', 'ComicStaticController@index')->name('homepage');
 
 
 //CHARACTERS
 
-Route::get('/characters', function () {
-    return view('characters');
-})->name('characterspage');
+Route::get('/characters', 'ComicStaticController@characterspage')->name('characterspage');
 
 
 //COMICS
 
-Route::get('/comics', function () {
-
-    $comics = config('comics');
-
-    $data = ['formati' => $comics];
-
-    return view('comics', $data);
-
-})->name('comicspage');
+Route::get('/comics', 'ComicDinamicController@comicspage')->name('comicspage');
 
 
 //MOVIE
 
-Route::get('/movie', function () {
-    return view('movie');
-})->name('moviepage');
+Route::get('/movie', 'ComicStaticController@moviepage')->name('moviepage');
 
 
 //TV
 
-Route::get('/tv', function () {
-    return view('tv');
-})->name('tvpage');
+Route::get('/tv', 'ComicStaticController@tvpage')->name('tvpage');
 
 
 //GAMES
 
-Route::get('/games', function () {
-    return view('games');
-})->name('gamespage');
+Route::get('/games', 'ComicStaticController@gamespage')->name('gamespage');
 
 
 //COLLECTIBLES
 
-Route::get('/collectibles', function () {
-    return view('collectibles');
-})->name('collectiblespage');
+Route::get('/collectibles', 'ComicStaticController@collectiblespage')->name('collectiblespage');
 
 
 //VIDEOS
 
-Route::get('/videos', function () {
-    return view('videos');
-})->name('videospage');
+Route::get('/videos', 'ComicStaticController@videospage')->name('videospage');
 
 
 //FANS
 
-Route::get('/fans', function () {
-    return view('fans');
-})->name('fanspage');
+Route::get('/fans', 'ComicStaticController@fanspage')->name('fanspage');
 
 
 //NEWS
 
-Route::get('/news', function () {
-    return view('news');
-})->name('newspage');
+Route::get('/news', 'ComicStaticController@newspage')->name('newspage');
 
 
 //SHOP
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shoppage');
+Route::get('/shop', 'ComicStaticController@shoppage')->name('shoppage');
