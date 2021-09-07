@@ -8,60 +8,58 @@
 
 @include('partials.jumbotron')
 
-    <hr>
+    <div class="container-details">
 
-    <img src="{{ $formati['thumb']}}" alt="{{$formati['series']}}">
-    <h1>{{$formati['title']}}</h1>
+    
+        <img class="image-details" src="{{ $formati['thumb']}}" alt="{{$formati['series']}}">
+       
+        <div class="container-description-details">
 
-    <div class="container-price-details">
+            <h1>{{$formati['title']}}</h1>
 
-        <p>U.S. Price: {{$formati['price']}}</p>
+            <div class="container-price-details">
 
-    </div>
+                <p>U.S. Price: {{$formati['price']}}</p>
+                <span>available</span>
 
-    <div class="description">
-        <p>{{$formati['description']}}</p>
-    </div>
+                <div class="list-check">
+                    <ul>Check Anvailability</ul>
+                </div>
 
-    <div class="container-talent-specs">
+            </div>
 
-        <div class="container-talent">
-  
-            <h2>Talent</h2>
-            
-            <hr>
-            
-            <p>art by: </p>
-            
-            <hr>
-            
-            <p>written by: </p>
-            
-            <hr>
+            <div class="description">
+                <p>{{$formati['description']}}</p>
+            </div>
 
-        </div>
+            <div class="container-talent-specs">
 
-        <div class="container-specs">
+                <div class="container-specs">
 
-            <h2>Specs</h2>
-            
-            <hr>
-            
-            <p>Series: {{$formati['series']}}</p>
-            
-            <hr>
-            
-            <p>U.S. price: {{$formati['price']}}</p>
-            
-            <hr>
-            
-            <p>On Sale Date: {{$formati['sale_date']}}</p>
-            
-            <hr>
+                    <h2>Specs</h2>
+                    
+                    <hr>
+                    
+                    <p><strong>Series:</strong>  {{$formati['series']}}</p>
+                    
+                    <hr>
+                    
+                    <p><strong>U.S. price:</strong> {{$formati['price']}}</p>
+                    
+                    <hr>
+                    
+                    <p><strong>On Sale Date:</strong> {{$formati['sale_date']}}</p>
+                    
+                    <hr>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
 
 
 @endsection

@@ -112,3 +112,29 @@ header .menu ul li a {
   text-transform: uppercase;
   color: white;
 }
+
+.container-details {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.container-details .image-details {
+  position: absolute;
+  top: -310px;
+}
+.container-details .container-description-details {
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+.container-details .container-description-details .container-price-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: green;
+}
+.container-details .container-description-details .container-price-details .list-check {
+  padding: 10px;
+  height: 100%;
+  border-left: 1px solid black;
+}

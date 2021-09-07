@@ -1,0 +1,37 @@
+
+
+
+ .container-details {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+
+    .image-details {
+        position: absolute;
+        top: -310px;
+    }
+
+    .container-description-details {
+        margin-top: 100px;
+        text-transform: uppercase;
+
+        .container-price-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            background-color: green;
+
+            .list-check {
+                padding: 10px;
+                height: 100%;
+                border-left: 1px solid black;
+            }
+        }
+    }
+
+
+
+
+
+ }
