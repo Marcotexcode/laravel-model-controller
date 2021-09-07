@@ -23,21 +23,18 @@
                         <p>{{$formato['series']}}</p>
 
                     </div>
-                    
+
                 @endforeach
 
             </div>
-            
 
             <button class="btn btn-comics" href="">load more</button>
 
         </div>
 
-
     </div>
 
     @include('partials.info')
-
 
 @endsection
 
